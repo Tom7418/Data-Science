@@ -1,13 +1,10 @@
-ÀÌ¸§ = c("ÀÌ±ÔÈ£","Á¶À±Ã¶","ÀÌ¼ö¿µ","Á¤À¯Âù","¹ÚÇü±Ô","ÀÚÇå±â¸£") #¼ºÇÔ
-GB = c(256,256,256,256,240,256) # ½º¸¶Æ®Æù ¿ë·®
-MB = c() # GB¸¦ MB·Î º¯È¯ÇÏ±â À§ÇÑ º¯¼ö
-for (i in line(GB))
+ì´ë¦„ = c("ì´ê·œí˜¸","ì¡°ìœ¤ì² ","ì´ìˆ˜ì˜","ì •ìœ ì°¬","ë°•í˜•ê·œ","ìží—Œê¸°ë¥´") #ì„±í•¨
+GB = c(256,256,256,256,240,256) # ìŠ¤ë§ˆíŠ¸í° ìš©ëŸ‰
+MB = c() # GBë¥¼ MBë¡œ ë³€í™˜í•˜ê¸° ìœ„í•œ ë³€ìˆ˜
+for (i in line(GB)) # GBë³€ìˆ˜ ê¸¸ì´ì— í•´ë‹¹í•˜ëŠ” ë§Œí¼ ë°˜ë³µ
   MB = GB*1024
-  print(MB)
-  »çÁø = as.double(MB / 10)
-  print(»çÁø)
-  »çÁø = as.character(»çÁø)
-print(»çÁø)        
+  ì‚¬ì§„ = as.double(MB / 10)
+        
 
-IDLE = data.frame(ÀÌ¸§,¿ë·®,»çÁø)
+IDLE = data.frame(ì´ë¦„,ìš©ëŸ‰,ì‚¬ì§„)
 IDLE
